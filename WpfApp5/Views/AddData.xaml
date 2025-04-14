@@ -1,0 +1,94 @@
+﻿<Window x:Class="WpfApp5.Views.AddData"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp5.Views"
+        mc:Ignorable="d"
+        Title="AddData" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto" MinWidth="150"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <!-- ID -->
+        
+        <!-- ФИО -->
+       
+        <Label Grid.Row="1" Grid.Column="0" Content="Фамилия:"/>
+        <TextBox Grid.Row="1" Grid.Column="1"  Name="LastnameTxb"/>
+        <Label Grid.Row="2" Grid.Column="0" Content="Имя:"/>
+        <TextBox Grid.Row="2" Grid.Column="1"  Name="NameTxb"/>
+
+
+
+        <Label Grid.Row="3" Grid.Column="0" Content="Отчество:"/>
+        <TextBox Grid.Row="3" Grid.Column="1"  Name="MidleNameTxb"/>
+
+        <!-- Паспортные данные -->
+        <Label Grid.Row="4" Grid.Column="0" Content="Серия паспорта:"/>
+        <TextBox Grid.Row="4" Grid.Column="1" 
+         Name="PassportSerialTxb"/>
+
+        <Label Grid.Row="5" Grid.Column="0" Content="Номер паспорта:"/>
+        <TextBox Grid.Row="5" Grid.Column="1" 
+         Name="PassportNumberTxb"/>
+        <Label Grid.Row="6" Grid.Column="0" Content="Почтовый индекс:"/>
+        <TextBox Grid.Row="6" Grid.Column="1"  Name="PostCodeTxb"/>
+
+        <!-- Адреса -->
+        <Label Grid.Row="7" Grid.Column="0" Content="Адрес регистрации:"/>
+        <TextBox Grid.Row="7" Grid.Column="1"  
+         Name="AddressTxb"/>
+        <Label Grid.Row="8" Grid.Column="0" Content="Адрес проживания:"/>
+        <TextBox Grid.Row="8" Grid.Column="1"  
+         Name="AddressLifeTxb"/>
+
+        <!-- Работа -->
+        <Label Grid.Row="9" Grid.Column="0" Content="Компания:"/>
+        <TextBox Grid.Row="9" Grid.Column="1"  Margin="0,0,0,5"
+         Name="CompanyTxb"/>
+
+        <Label Grid.Row="10" Grid.Column="0" Content="Должность:"/>
+        <TextBox Grid.Row="10" Grid.Column="1"  Margin="0,0,0,5"
+         Name="JobNameTxb"/>
+
+        <!-- Контакты -->
+        <Label Grid.Row="11" Grid.Column="0" Content="Телефон:"/>
+        <TextBox Grid.Row="11" Grid.Column="1"  Margin="0,0,0,5"
+         Name="PhoneTxb"/>
+
+        <Label Grid.Row="12" Grid.Column="0" Content="Email:"/>
+        <TextBox Grid.Row="12" Grid.Column="1"  Margin="0,0,0,5"
+         Name="EmailTxb"/>
+        <Label Grid.Row="13" Grid.Column="0" Content="Описание фото:"/>
+        <TextBox Grid.Row="13" Grid.Column="1"  Margin="0,0,0,5"
+         Name="PhotoDescriptionTxb"/>
+        <!-- Кнопки -->
+        <StackPanel Grid.Row="14" Grid.ColumnSpan="2" Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,10">
+            <Button Content="Сохранить" Width="100" Margin="0,0,10,0" Click="SaveButton_Click"/>
+            <Button Content="Очистить" Width="100" Click="ClearButton_Click"/>
+            
+        </StackPanel>
+    </Grid>
+</Window>
